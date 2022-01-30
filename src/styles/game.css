@@ -10,8 +10,8 @@
 }
 
 .block {
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
 
     border: 2px solid #000;
     border-radius: 5px;
@@ -19,6 +19,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    text-align: center;
+
+    font-family: monospace;
+
+}
+
+.block>p {
+    width: 100%;
+
+    margin: 0;
 
 }
 
@@ -31,8 +42,46 @@
 
 }
 
+#score {
+    margin-left: 50px;
+
+    font-family: monospace, sans-serif;
+
+    height: fit-content;
+
+}
+
+#score>thead>tr>th, #score>tbody>tr>td {
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+
+    text-align: center;
+    height: fit-content;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    width: 10rem;
+
+}
+
+#score>thead>tr>th:last-child, #score>tbody>tr>td:last-child {
+    border-right: 0;
+
+}
+
 .block:not(:last-child) {
     margin-right: 10px;
+
+}
+
+.block:hover {
+    cursor: pointer;
+
+}
+
+.block:active {
+    transform: scale(.9);
 
 }
 
